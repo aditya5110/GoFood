@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+
 const mongoURI = "mongodb+srv://goFoodDB:goFoodDB123@cluster0.nisundv.mongodb.net/goFoodMern?retryWrites=true&w=majority"
 
 const mongoDB = async () => {
