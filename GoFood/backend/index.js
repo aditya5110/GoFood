@@ -14,11 +14,13 @@ app.get('/' , (req,res) => {
     res.send("Hello World!")
 })
 app.use(express.json())
-// import * from "./Routes/CreateUser.js"
 
-import router from "./Routes/CreateUser.js"
-//console.log(router)
-app.use('/api' , router)
+import router1 from "./Routes/CreateUser.js"
+app.use('/api' , router1)
+
+import router2 from './Routes/DisplayData.js'
+app.use('/api', router2)
+
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}`)
