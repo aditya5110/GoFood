@@ -20,7 +20,7 @@ function App() {
 
   return (
     <CartProvider>
-      <Router>
+      <Router> 
         <div>
           <Routes>
             <Route exact path="/" element={<Home/>} />
