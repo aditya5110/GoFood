@@ -21,6 +21,9 @@ app.use('/api' , router1)
 import router2 from './Routes/DisplayData.js'
 app.use('/api', router2)
 
+import router3 from './Routes/OrderData.js'
+app.use('/api', router3)
+
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}`)
